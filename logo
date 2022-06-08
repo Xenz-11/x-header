@@ -1,4 +1,4 @@
-import os,time
+import os,time,sys
 def lari(kontol):
         for wibu in kontol + "\n":
                 sys.stdout.write(wibu)
