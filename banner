@@ -1,0 +1,26 @@
+au=('''
+shopt -s histappend
+shopt -s histverify
+export HISTCONTROL=ignoreboth
+echo -e "\e[1;97m█████████......WELLCOME......"
+echo -e "\e[1;97m█▄█████▄█..Author........XENZ"
+echo -e "\e[1;97m█\e[1;91m▼▼▼▼▼\e[1;97m.....Github........github.com/Xenz-11"
+echo -e "\e[1;97m█..........WhatsApp......083138613993"
+echo -e "\e[1;97m█\e[1;91m▲▲▲▲▲\e[1;97m.......Instagram...xenz_why"
+echo -e "\e[1;97m█████████"
+echo -e "\e[1;97m ██ ██"
+echo -e "\e[1;97m█████████████████████████████████"
+echo -e "\e[1;97m█\e[1;96mXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\e[1;97m█"
+echo -e "\e[1;97m█████████████████████████████████"
+PROMPT_DIRTRIM=2
+PS1="\e[1;91m╭───\e[1;93m(\e[1;97m\w\e[1;93m)\e[1;91m─\e[1;93m(\e[1;96m\T\e[1;93m)\e[1;91m▸\n╰─\e[1;92m■
+  "
+
+# Handles nonexistent commands.
+# If user has entered command which invokes non-available
+# utility, command-not-found will give a package suggestions.
+if [ -x /data/data/com.termux/files/usr/libexec/termux/command-not-found ]; then
+        command_not_found_handle() {
+                /data/data/com.termux/files/usr/libexec/termux/command-not-found "$1"
+        }
+fi''')
